@@ -16,7 +16,7 @@ for i in range(add_count):
 
 total_budget = sum(budget for _, budget in movies)
 average_budget = total_budget / len(movies)
-print(f"\n🎬 Average budget: ${average_budget:,.0f}\n")
+print(f"\nAverage budget: ${average_budget:,.0f}\n")
 
 above_avg = []
 for name, budget in movies:
@@ -25,3 +25,4 @@ for name, budget in movies:
         print(f"'{name}' spent ${diff:,.0f} more than average")
         above_avg.append(name)
 print(f"\nNumber of movies above average: {len(above_avg)}")
+
